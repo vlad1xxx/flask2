@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h4>Фамилия: {{ human.surname }}</h4><br>
+    <h4>Имя: {{ human.name }}</h4><br>
+    <h4>Образование: {{ human.education }}</h4><br>
+    <h4>Профессия: {{ human.profession }} </h4><br>
+    <h4>Пол: {{ human.sex }}</h4><br>
+    <h4>Мотивация: {{ human.motivation }}</h4><br>
+    <h4>Готовы остаться на Марсе? {{ human.ready }}</h4>
+{% endblock %}
