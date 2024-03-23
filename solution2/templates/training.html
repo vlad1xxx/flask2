@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if station == 'нс' %}
+        <h2>Инженерные тренажеры</h2>
+        <img src="../static/img/map2.png" alt="zxc">
+    {% elif station == 'ит' %}
+        <h2>Научные симуляторы</h2>
+        <img src="../static/img/map1.jpeg" alt="zxcc">
+    {% endif %}
+{% endblock %}
