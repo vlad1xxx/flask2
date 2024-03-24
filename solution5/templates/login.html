@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+
+    <h2><img src="../static/img/MARS-2-7.png" alt="">Аварийный доступ</h2>
+    <p>
+        {{ form.id_astronaut.label }}<br>
+        {{ form.id_astronaut(class="input_form") }}<br>
+    </p>
+    <p>
+        {{ form.pwd_astronaut.label }}<br>
+        {{ form.pwd_astronaut(class="input_form", type="password") }}<br>
+    </p>
+    <p>
+        {{ form.id_captain.label }}<br>
+        {{ form.id_captain(class="input_form") }}<br>
+    </p>
+    <p>
+        {{ form.pwd_captain.label }}<br>
+        {{ form.pwd_captain(class="input_form") }}<br>
+    </p>
+    <p>{{ form.submit(type="submit", class="submit_btn") }}</p>
+</form>
+{% endblock %}
